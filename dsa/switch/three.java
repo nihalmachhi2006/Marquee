@@ -17,15 +17,5 @@ public class three {
         // }
         // scn.close();
 
-        int i = 1000;
-        int j = 100;
-        int count = 0;
-        while (j <= i) {
-            if (j % 2 == 0) {
-                System.out.println(i);
-                count++;
-                i++;
-            }
-        }
     }
 }
