@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,
+      th {
+        border: 2px solid black;
+        padding: 5px;
+      }
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Invoice #123456789</th>
+          <th colspan="2">14 January 2025</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <h3>Pay to:</h3>
+            <p>
+              Acme Billing Co.<br />123 Main St<br />
+              Cityville, NA 12345
+            </p>
+          </td>
+          <td colspan="2">
+            <h3>Customer:</h3>
+            <p>
+              John Smith<br />21 Willow Way<br />
+              outheast Northwesternshire, MA 54321
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>Name / Description</td>
+          <td>Qty.</td>
+          <td>@</td>
+          <td>Cost</td>
+        </tr>
+        <tr>
+          <td>Paperclips</td>
+          <td>1000</td>
+          <td>0.01</td>
+          <td>10.00</td>
+        </tr>
+        <tr>
+          <td>Staples (box)</td>
+          <td>1000</td>
+          <td>1.00</td>
+          <td>100.00</td>
+        </tr>
+        <tr>
+          <td colspan="3">SubTotal</td>
+          <td>110.00</td>
+        </tr>
+        <tr>
+          <td colspan="2">tax</td>
+          <td>8%</td>
+          <td>8.80</td>
+        </tr>
+        <tr>
+          <td colspan="3">Grand Total</td>
+          <td>$118.80</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<!-- Invoice #123456789
+14 January 2025
+Pay to:
+Acme Billing Co.
+123 Main St. Cityville, NA 12345
+Customer:
+John Smith 321 Willow Way Southeast Northwesternshire, MA 54321
+Name / Description
+Qty.
+@
+Cost
+Paperclips
+1000
+0.01
+10.00
+Staples (box)
+1000
+1.00
+100.00
+Subtotal
+110.00
+Tax
+8%
+8.80
+Grand Total
+$ 118.80 -->
