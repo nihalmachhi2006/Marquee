@@ -1,20 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        
+      ul {
+        color: rgb(238, 116, 136);
+      }
+      .formatting {
+        background: #6e8ce9;
+      }
+      #info,
+      #click {
+        background-color: purple;
+      }
+      ul li {
+        color: greenyellow;
+        background: black;
+      }
+      div ~ p {
+        color: yellowgreen;
+      }
+      div > p {
+        background: yellowgreen;
+      }
+      input[value] {
+        background: blueviolet;
+      }
+      input[placeholder] {
+        background-color: orange;
+      }
+      a:hover {
+        font-size: 60px;
+        animation-duration: 7ms;
+        color: yellowgreen;
+      }
     </style>
-</head>
-<body>
-    <h3>CSS</h3>
-    <ul>
-        <li>Inline CSS</li>
-        <li>Internal CSS</li>
-        <li>External CSS</li>
+  </head>
+  <body>
+    <h3 id="info">Types of Css :</h3>
+    <p class="formatting">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    <ul class="formatting">
+      <li>Inline CSS</li>
+      <li style="color: white">Internal CSS</li>
+      <li>External CSS</li>
     </ul>
-</body>
+    <a href="#" id="click">Click here</a>
+
+    <section>
+      <div>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <form
+      action="
+    "
+      method="get"
+    >
+      <label for="name"></label>Username:
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Your Username"
+      /><br />
+      <label for="name"></label>Password:
+      <input type="password" name="password" id="password" value="password" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
 </html>
