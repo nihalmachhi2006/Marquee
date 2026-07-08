@@ -1,0 +1,21 @@
+div {
+  width: 400px;
+  background-color: aqua;
+  height: 400px;
+  right: 100px;
+  position: absolute;
+}
+section {
+  width: 300px;
+  height: 200px;
+  background-color: ghostwhite;
+  border: 2px solid red;
+  /* position: absolute; */
+  position: absolute;
+  top: 40px;
+}
+section > p {
+  right: 20px;
+  top: 30px;
+  position: absolute;
+}
