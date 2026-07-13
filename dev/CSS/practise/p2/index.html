@@ -90,168 +90,224 @@
         margin: 20px 30px;
       }
       img{
-        height: 30px;
+        height: 0px;
         width: 30px;
         margin: 15px 15px;
+      }
+
+      .wrapper{
+         height: 100vh;
+        width: 100vw;
+        position: relative;
+        background: #f9f9f9;
+      }
+      .nextround{
+        height: 80px;
+        width: 100px;
+        background: white;
+        border-radius: 100%;
+        margin: 10px;
+      }
+      .v-card{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 60px 195px;
+        border: 2px solid black;
+        height: auto;
+        width: 30%;
+      }
+      .v-card-img{
+        
+        height: 50px;
+        width: 50px;
+      }
+      h5{
+        margin-top: 5px;
+        font-size: 20px;
+        margin: 2px 4px ;
+      }
+      .v-card:hover{
+        .nextround{
+            background: red;
+            transition: 2s;
+        }
       }
 
     </style>
   </head>
   <body>
     <div class="root">
-      <div class="heading">
-        <h1>What Our Clients Say</h1>
-        <p style="color: gray">
-          Read what our satisfied clients have to say about working with QASSERT
-        </p>
-      </div>
-      <div class="cards">
-        <div id="card-1">
-               <div class="round" >
-                <p>"</p>
-            </div>
-          <div class="card-heading">
-            <p>John Miller</p>
-            <p id="inner-title" style="color: red">Software Architect</p>
-            <div class="star-img">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="info">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla facere aperiam tempore repudiandae esse, molestias minus
-              quibusdam necessitatibus! Possimus reiciendis hic iusto.
-              Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
-              quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
-              placeat at rerum consectetur quas consequuntur voluptatem fugit
-              fugiat aperiam praesentium rem autem commodi explicabo minima.
-            </p>
-          </div>
-          <div>
-         
-        </div>
-      </div>
-         <div id="card-2">
-               <div class="round" >
-                <p>"</p>
-            </div>
-          <div class="card-heading">
-            <p>Samantha Turner</p>
-            <p id="inner-title" style="color: red">Product Manager</p>
-            <div class="star-img">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="info">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla facere aperiam tempore repudiandae esse, molestias minus
-              quibusdam necessitatibus! Possimus reiciendis hic iusto.
-              Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
-              quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
-              placeat at rerum consectetur quas consequuntur voluptatem fugit
-              fugiat aperiam praesentium rem autem commodi explicabo minima.
-            </p>
-          </div>
-          <div>
-         
-        </div>
-      </div>
-         <div id="card-3">
-               <div class="round" >
-                <p>"</p>
-            </div>
-          <div class="card-heading">
-            <p>JMichael Johnson</p>
-            <p id="inner-title" style="color: red">Tech Lead</p>
-            <div class="star-img">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="info">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              nulla facere aperiam tempore repudiandae esse, molestias minus
-              quibusdam necessitatibus! Possimus reiciendis hic iusto.
-              Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
-              quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
-              placeat at rerum consectetur quas consequuntur voluptatem fugit
-              fugiat aperiam praesentium rem autem commodi explicabo minima.
-            </p>
-          </div>
-          <div>
-         
-        </div>
-      </div>
-         
-    </div>
-    <div class="sticker" >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQi_hphr7ZgUqcTQaF4SHbdTrnHLw5ZcSqaeh_0kJ3Yw&s=10" alt="chaticons">
+                <div class="heading">
+                    <h1>What Our Clients Say</h1>
+                    <p style="color: gray">
+                    Read what our satisfied clients have to say about working with QASSERT
+                    </p>
+                </div>
+                <div class="cards">
+                    <div id="card-1">
+                        <div class="round" >
+                            <p>"</p>
+                        </div>
+                    <div class="card-heading">
+                        <p>John Miller</p>
+                        <p id="inner-title" style="color: red">Software Architect</p>
+                        <div class="star-img">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                        nulla facere aperiam tempore repudiandae esse, molestias minus
+                        quibusdam necessitatibus! Possimus reiciendis hic iusto.
+                        Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
+                        quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
+                        placeat at rerum consectetur quas consequuntur voluptatem fugit
+                        fugiat aperiam praesentium rem autem commodi explicabo minima.
+                        </p>
+                    </div>
+                    <div>
+                    
+                    </div>
+                </div>
+                    <div id="card-2">
+                        <div class="round" >
+                            <p>"</p>
+                        </div>
+                    <div class="card-heading">
+                        <p>Samantha Turner</p>
+                        <p id="inner-title" style="color: red">Product Manager</p>
+                        <div class="star-img">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                        nulla facere aperiam tempore repudiandae esse, molestias minus
+                        quibusdam necessitatibus! Possimus reiciendis hic iusto.
+                        Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
+                        quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
+                        placeat at rerum consectetur quas consequuntur voluptatem fugit
+                        fugiat aperiam praesentium rem autem commodi explicabo minima.
+                        </p>
+                    </div>
+                    <div>
+                    
+                    </div>
+                </div>
+                    <div id="card-3">
+                        <div class="round" >
+                            <p>"</p>
+                        </div>
+                    <div class="card-heading">
+                        <p>JMichael Johnson</p>
+                        <p id="inner-title" style="color: red">Tech Lead</p>
+                        <div class="star-img">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSe6b0YJLfRzw-3tQMewMzZMwi-ef-ZqGL_7FPcYPLw&s=10"
+                            alt=""
+                        />
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+                        nulla facere aperiam tempore repudiandae esse, molestias minus
+                        quibusdam necessitatibus! Possimus reiciendis hic iusto.
+                        Reprehenderit, voluptatem incidunt voluptatum rerum eum tenetur
+                        quaerat sunt. Obcaecati voluptate quis, magni cum architecto, in
+                        placeat at rerum consectetur quas consequuntur voluptatem fugit
+                        fugiat aperiam praesentium rem autem commodi explicabo minima.
+                        </p>
+                    </div>
+                    <div>
+                    
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="sticker" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQi_hphr7ZgUqcTQaF4SHbdTrnHLw5ZcSqaeh_0kJ3Yw&s=10" alt="chaticons">
 
+    </div>
+
+    <div class="wrapper" >
+
+    <div class="heading" >
+        <h2>Our Service</h2>
+    </div>
+    <div class="v-card" >
+        <div class="nextround">
+            <img class="v-card-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtKfeXtaAk0Fk4e8ZGCnfGHKbnATh8XYM5SzOt3CNtlP1jKruCp_i07o&s=10" alt="">
+        </div>
+        <div>
+        <h5>Manual Testing</h5>
+        <p>Comprehensive manual testing to ensure your software functions as Intended.</p>
+        </div>
+    </div>
+    
+
+    
     </div>
  
   </body>
 </html>
 <!-- Samantha Turner
-Product Manager
-
-Michael Johnson
-Tech Lead -->
+Manual Testing
+Comprehensive manual testing to ensure your software functions as Intended.
