@@ -1,0 +1,45 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-root {
+  margin: 10px 10%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo1 {
+  background: #ffe51f;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.logo2 {
+  background: greenyellow;
+  color: black;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+.locations {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 0;
+  padding-right: 0px;
+  justify-content: space-between;
+}
+.locations > p > span {
+  color: blue;
+  font-family: 50px;
+}
+
