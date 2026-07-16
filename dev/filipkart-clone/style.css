@@ -135,12 +135,12 @@ main {
 
 #icons-box {
   width: 100%;
-  height: 80px;
+  height: 70px;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 5px;
+  gap: 1px;
 
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
@@ -176,4 +176,89 @@ main {
   gap: 20px;
   display: flex;
   overflow-x: scroll;
+}
+/* container */
+.trending-section {
+  background: #e7e2ff;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 500px; */
+  justify-content: space-evenly;
+  gap: 2px;
+  border-radius: 30px;
+}
+
+#trending-section-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#trending-section-items img {
+  height: auto;
+  width: 250px;
+  border-radius: 30px;
+  margin: 10px 10px;
+  display: flex;
+}
+
+.wrapper-class > img {
+  height: 30px;
+  width: 30px;
+}
+.wrapper-class {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 8px;
+}
+
+.footer-main-div {
+  /* margin-top: 200px; */
+  padding: 40px 50px;
+  margin-top: 40px;
+  background: white;
+  height: auto;
+  border: 1px solid black;
+  width: 100%;
+  /* color: white; */
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.footer-main-div > div > p {
+  padding: 5px;
+}
+.border-line {
+  border: 1px solid black;
+}
+.inner-media {
+  margin-top: 30px;
+}
+
+.inner-media-icons {
+  margin-top: 20px;
+  height: 40px;
+  width: 40px;
+  gap: 10px;
+  display: flex;
+}
+
+.full-w-border {
+  border: 1px solid black;
+}
+
+.bottom-section {
+  display: flex;
+  margin: 8px 50px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-section > div > img {
+}
+.payment-options {
+  height: 80px;
+  width: 200px;
 }
