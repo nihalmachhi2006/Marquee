@@ -1,20 +1,4 @@
 :root {
-  --wh-slate-50: #f8fafc;
-  --wh-slate-100: #f1f5f9;
-  --wh-slate-200: #e2e8f0;
-  --wh-slate-300: #cbd5e1;
-  --wh-slate-400: #94a3b8;
-  --wh-slate-500: #64748b;
-  --wh-slate-600: #475569;
-  --wh-slate-700: #334155;
-  --wh-slate-800: #1e293b;
-  --wh-slate-900: #0f172a;
-  --wh-slate-950: #020617;
-  --brand-border-radius: 20px;
-  --primary-text: crimson;
-  --text-size: 34px;
-
-  /* Shared width for header and main */
   --content-width: min(1200px, 75vw);
 }
 
@@ -22,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: gilroy, sans-serif;
 }
 
 html,
@@ -31,10 +14,6 @@ body {
   width: 100%;
   background-color: #ffffff;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 header {
   width: var(--content-width);
@@ -103,17 +82,14 @@ nav {
 
   padding: 5px;
   border-radius: 10px;
-
-  /* background-color: rgb(213, 206, 206); */
 }
 
 .btn-box {
   width: 70%;
-  /* height: 80%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid rgb(9, 205, 219);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 0.5rem;
 }
 .btn-box input {
@@ -124,44 +100,38 @@ nav {
   background-color: transparent;
 }
 .btn-box i {
-  padding: 1rem;
+  padding: 2px;
 }
 
 .login-box {
-  width: 25%;
-  height: 80%;
+  width: 30%;
+  height: 4%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
+  text-align: center;
+  /* padding: 20px 40px; */
+  gap: 1px;
+  padding: 4px 8px;
 }
+
+.login-box-items > img {
+  justify-content: center;
+}
+
 .login-box-items {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 0.2rem;
+  align-items: center;
 }
-
-/* =========================
-   MAIN
-========================= */
-
 main {
   width: var(--content-width);
-
-  /* Push content below fixed header */
   margin: 230px auto 0;
-
-  /* TODO : Remove after implementing */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
-/* =========================
-   ICONS
-========================= */
 
 #icons-box {
   width: 100%;
@@ -190,4 +160,20 @@ main {
   gap: 0.6rem;
   justify-content: center;
   align-items: center;
+}
+
+.offer-img {
+  width: 100%;
+  height: 100%;
+}
+
+.herosection-img > div > img {
+  height: 224px;
+  width: 460px;
+  border-radius: 20px;
+}
+.herosection-img {
+  gap: 20px;
+  display: flex;
+  overflow-x: scroll;
 }
