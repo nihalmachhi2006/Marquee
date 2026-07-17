@@ -166,7 +166,9 @@ main {
   width: 100%;
   height: 100%;
 }
-
+.herosection-img > div > {
+  position: relative;
+}
 .herosection-img > div > img {
   height: 224px;
   width: 460px;
@@ -176,7 +178,20 @@ main {
   gap: 20px;
   display: flex;
   overflow-x: scroll;
+  position: relative;
 }
+.herosection-img-items > p {
+  font-size: 20px;
+  bottom: 50px;
+  background: greenyellow;
+  left: 25px;
+  position: relative;
+  border-radius: 4px;
+  padding: 2px 2px;
+  display: inline-block;
+  z-index: 1;
+}
+
 /* container */
 .trending-section {
   background: #e7e2ff;
