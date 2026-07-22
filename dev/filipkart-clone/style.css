@@ -134,32 +134,33 @@ main {
 }
 
 #icons-box {
-  width: 100%;
+  width: auto;
   height: 70px;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1px;
+  /* gap: 1px; */
 
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
 
   margin-bottom: 1rem;
+  overflow-x: scroll;
 }
 
 .icons-items {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 
-  padding: 5px;
-  border-radius: 1rem;
+  padding: 20px;
+  border-radius: 2rem;
 
-  display: flex;
+  display: grid;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: center;;
 }
 
 .offer-img {
