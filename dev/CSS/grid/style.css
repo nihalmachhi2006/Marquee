@@ -12,12 +12,27 @@ body {
 }
 
 .grid-items {
-  background-color: aquamarine;
-  width: 200px;
-  height: 100px;
+  background-color: rgb(246, 255, 252);
+  /* width: 200px; */
+  /* height: 100px; */
+  height: 150px;
+  width: 150px;
+  padding: 10px 10px;
 }
 
 #grid-container {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  align-items: center;
+  justify-items: center;
+  padding: 20px 10px;
+}
+
+.grid-items1 {
+  background: black;
+  height: 150px;
+  width: 150px;
+  color: white;
+  padding: 10px 10px;
 }
