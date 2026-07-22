@@ -135,7 +135,7 @@ main {
 
 #icons-box {
   width: auto;
-  height: 70px;
+  height: 120px;
 
   display: flex;
   align-items: center;
@@ -144,13 +144,12 @@ main {
 
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
-
-  margin-bottom: 1rem;
   overflow-x: scroll;
+  margin-bottom: 1rem;
 }
 
 .icons-items {
-  width: 100px;
+  width: 100px; 
   height: 100px;
 
   padding: 20px;
@@ -160,7 +159,7 @@ main {
   flex-direction: column;
   gap: 10px;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
 }
 
 .offer-img {
