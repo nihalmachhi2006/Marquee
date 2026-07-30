@@ -1,3 +1,38 @@
-*{
-    margin: 0px 0px;
+* {
+  margin: 0px 0px;
+}
+
+.animation-box {
+  height: 200px;
+  width: 200px;
+  margin: 200px;
+  background-color: greenyellow;
+  align-content: center;
+  text-align: center;
+  border-radius: 40px;
+  animation-name: smoother;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  transition:
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+.animation-box:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+
+@keyframes smoother {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(5) rotate(100deg);
+  }
+  100% {
+    transform: scale(2);
+  }
 }
