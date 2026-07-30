@@ -1,31 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <div class="sidebar">
-        <div>
-          <div>
-            Italy Product
-            <p>Admin Panel</p>
-          </div>
-          <div>
-            hello
-          </div>
-        </div>
-      </div>
-      <div class="mainsection"></div>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afghan Product Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Dashboard Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>Afghan Product</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Users</a>
+                <a href="#"><i class="fa-solid fa-box"></i> Products</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+                <a href="#"><i class="fa-solid fa-tags"></i> Categories</a>
+                <a href="#"><i class="fa-solid fa-comment-dots"></i> Messages</a>
+                <a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+            <div class="sidebar-user">
+                <img src="https://placeholder.com" alt="User Avatar">
+                <div class="user-info">
+                    <h4>Admin User</h4>
+                    <p>admin@afghan.com</p>
+                </div>
+            </div>
+        </aside>
 
-<!-- Users
-Products
-Orders
-Categories
-Mentagns
-Analytica
-Settings -->
+        <!-- Main Dashboard Content -->
+        <main class="main-content">
+            <!-- Top Header Navbar -->
+            <header class="header">
+                <div class="header-title">
+                    <h1>Dashboard</h1>
+                    <p>Manage and dashboard here</p>
+                </div>
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="badge"></span>
+                    </div>
+                    <div class="profile-dropdown">
+                        <span>A</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Welcome Card -->
+            <section class="welcome-card">
+                <div class="welcome-text">
+                    <h2>Welcome back, Admin</h2>
+                    <p>Here's your platform performance overview</p>
+                </div>
+                <div class="welcome-stats">
+                    <div class="w-stat">
+                        <span><i class="fa-solid fa-cart-shopping"></i> Today's Orders</span>
+                        <h3>47</h3>
+                        <p class="trend up">+12% from yesterday</p>
+                    </div>
+                    <div class="w-stat">
+                        <span><i class="fa-solid fa-user-plus"></i> New Users</span>
+                        <h3>23</h3>
+                        <p class="trend up">+5% from yesterday</p>
+                    </div>
+                    <div class="w-stat">
+                        <span><i class="fa-solid fa-money-bill-wave"></i> Revenue Today</span>
+                        <h3>PKR 84K</h3>
+                        <p class="trend up">+15% from yesterday</p>
+                    </div>
+                    <div class="w-stat">
+                        <span><i class="fa-solid fa-percent"></i> Conversion Rate</span>
+                        <h3>3.24%</h3>
+                        <p class="trend up">+0.8% from yesterday</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid Performance Cards -->
+            <section class="performance-grid">
+                <!-- Card 1 -->
+                <div class="perf-card">
+                    <div class="perf-header">
+                        <div>
+                            <h3>12,543</h3>
+                            <p>Total Users</p>
+                        </div>
+                        <i class="fa-solid fa-users icon-blue"></i>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    <div class="perf-footer"><span>75%</span> <span>vs last month: 11,000</span></div>
+                </div>
+                <!-- Card 2 -->
+                <div class="perf-card">
+                    <div class="perf-header">
+                        <div>
+                            <h3>3,842</h3>
+                            <p>Total Products</p>
+                        </div>
+                        <i class="fa-solid fa-box icon-green"></i>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 62%;"></div></div>
+                    <div class="perf-footer"><span>62%</span> <span>vs last month: 3,147</span></div>
+                </div>
+                <!-- Card 3 -->
+                <div class="perf-card">
+                    <div class="perf-header">
+                        <div>
+                            <h3>9,238</h3>
+                            <p>Total Orders</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping icon-orange"></i>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 83%;"></div></div>
+                    <div class="perf-footer"><span>83%</span> <span>vs last month: 8,012</span></div>
+                </div>
+                <!-- Card 4 -->
+                <div class="perf-card">
+                    <div class="perf-header">
+                        <div>
+                            <h3>PKR 2.4M</h3>
+                            <p>Total Revenue</p>
+                        </div>
+                        <i class="fa-solid fa-dollar-sign icon-purple"></i>
+                    </div>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    <div class="perf-footer"><span>90%</span> <span>vs last month: PKR 1.81M</span></div>
+                </div>
+            </section>
+
+            <!-- Analytics and Activity Split Layout -->
+            <div class="analytics-layout">
+                <!-- Revenue Analytics Chart Area -->
+                <div class="analytics-box">
+                    <div class="box-header">
+                        <h3>Revenue Analytics</h3>
+                        <div class="toggle-buttons">
+                            <button class="active">This Month</button>
+                            <button>This Year</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-row">
+                            <span class="month">January</span>
+                            <div class="bar-wrapper"><div class="bar" style="width: 60%;">60%</div></div>
+                            <span class="value">PKR 125K</span>
+                        </div>
+                        <div class="chart-row">
+                            <span class="month">February</span>
+                            <div class="bar-wrapper"><div class="bar" style="width: 75%;">75%</div></div>
+                            <span class="value">PKR 220K</span>
+                        </div>
+                        <div class="chart-row">
+                            <span class="month">March</span>
+                            <div class="bar-wrapper"><div class="bar" style="width: 80%;">80%</div></div>
+                            <span class="value">PKR 240K</span>
+                        </div>
+                    </div>
+                    <div class="chart-summary">
+                        <div><h4>PKR 640K</h4><p>Total Revenue</p></div>
+                        <div><h4>+18.5%</h4><p>Growth Rate</p></div>
+                        <div><h4>PKR 213K</h4><p>Avg Order</p></div>
+                        <div><h4>3,022</h4><p>Total Orders</p></div>
+                    </div>
+                </div>
+
+                <!-- Live Activity Feed -->
+                <div class="activity-box">
+                    <div class="box-header">
+                        <h3>Live Activity</h3>
+                        <span class="live-indicator"><span class="dot"></span> Live</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li>
+                            <i class="fa-solid fa-shopping-bag text-blue"></i>
+                            <div>
+                                <p><strong>Ahmad Sharif</strong> placed a new order</p>
+                                <span>PKR 4,500 &bull; 2 mins ago</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-check text-green"></i>
+                            <div>
+                                <p><strong>Fatima Nazari</strong> registered as seller</p>
+                                <span>10 mins ago</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-plus-circle text-orange"></i>
+                            <div>
+                                <p><strong>Hamid Karimi</strong> added a new product</p>
+                                <span>15 mins ago</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="view-all">View All Activities</a>
