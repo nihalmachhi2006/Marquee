@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        width: 320px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px 25px;
+        text-align: center;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+        /* Transition Property */
+        transition: 0.35s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+      }
+
+      .profile {
+        position: relative;
+        width: 95px;
+        height: 95px;
+        margin: auto;
+      }
+
+      .profile img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #eee;
+
+        transition: 0.4s;
+      }
+
+      .card:hover .profile img {
+        transform: scale(1.05);
+      }
+
+      .online {
+        position: absolute;
+        right: 6px;
+        bottom: 8px;
+        width: 16px;
+        height: 16px;
+        background: #00d84a;
+        border: 3px solid white;
+        border-radius: 50%;
+
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 216, 74, 0.8);
+        }
+
+        70% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 10px rgba(0, 216, 74, 0);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      h2 {
+        margin-top: 18px;
+        font-size: 22px;
+      }
+
+      p {
+        color: #777;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+      }
+
+      .stats div {
+        flex: 1;
+      }
+
+      .stats h3 {
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .stats span {
+        color: #888;
+        font-size: 14px;
+      }
+
+      .about {
+        color: #777;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 25px;
+      }
+
+      .social a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+
+        transition: 0.3s;
+      }
+
+      .social a:hover {
+        transform: translateY(-5px) scale(1.1);
+      }
+
+      .facebook {
+        background: #1877f2;
+      }
+
+      .twitter {
+        background: #1da1f2;
+      }
+
+      .instagram {
+        background: #e1306c;
+      }
+
+      .linkedin {
+        background: #0077b5;
+      }
+
+      .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 14px;
+        border-radius: 30px;
+        background: #1ec8c6;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        /* Transition Property */
+        transition:
+          background 0.35s,
+          transform 0.35s;
+      }
+
+      .btn:hover {
+        background: #159998; /* Darker color */
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profile">
+        <img
+          src="https://avatars.githubusercontent.com/u/183213542?v=4"
+          alt="Profile"
+        />
+        <span class="online"></span>
+      </div>
+
+      <h2>Vel Kumar P</h2>
+      <p>UI/UX Designer</p>
+
+      <div class="stats">
+        <div>
+          <h3>11</h3>
+          <span>Projects</span>
+        </div>
+
+        <div>
+          <h3>250</h3>
+          <span>Following</span>
+        </div>
+
+        <div>
+          <h3>185</h3>
+          <span>Followers</span>
+        </div>
+      </div>
+
+      <div class="about">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+        aspernatur.
+      </div>
+
+      <div class="social">
+        <a href="#" class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="#" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <a href="#" class="btn">View Profile</a>
+    </div>
+  </body>
+</html>
