@@ -1,4 +1,4 @@
-**HTML Questions****
+<!-- **HTML Questions****
 
 What is HTML and why is it used?
 What are HTML tags and attributes?
@@ -25,4 +25,4 @@ What is the difference between nth-child() and nth-of-type() selectors?
 keep
 Pinned
 https://www.greatfrontend.com/blog/50-must-know-html-css-and-javascript-interview-questions-by-ex-interviewers
-keep
+keep -->
