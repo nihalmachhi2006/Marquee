@@ -34,4 +34,4 @@ async function fetchGitHubUser(username) {
 }
 
 // Usage:
-fetchGitHubUser('deven-deshmukh');
+fetchGitHubUser('nihalmachhi2006');
